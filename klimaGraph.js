@@ -76,11 +76,11 @@ function drawKlimaGraph() {
         }
     }
 
-    koordsystem.font = "15px Roboto";
+    koordsystem.font = "12px Roboto";
 
     for (i = 1; i < 5; i++) {
         koordsystem.textAlign = "end";
-        koordsystem.fillText(i * 0.5 + "℃", 38, maxY + 7.5 - i * tempDist)
+        koordsystem.fillText(i * 0.25 + 1 + "℃", 38, maxY + 7.5 - i * tempDist)
     }
     for (i = 0; i < 6; i++) {
         koordsystem.textAlign = "center";
@@ -96,7 +96,7 @@ export function adjustKlimaGraph(tempPlus, color, level) {
     koordsystem.beginPath();
     koordsystem.moveTo(40 + level * levelDist, Y);
     Y = Y - tempPlus * tempDist * 2;
-    if (Y < maxY - 4 * tempDist) {
+    if (Y <= maxY - 4 * tempDist) {
         Y = maxY - 4 * tempDist;
         gameO = true
     }
@@ -112,6 +112,11 @@ export function adjustKlimaGraph(tempPlus, color, level) {
 export function resetGraph() {
     Y = maxY;
     koordsystem.clearRect(0, 0, maxX, maxY);
+    koordsystem.beginPath();
+    koordsystem.moveTo(0, 0);
+    koordsystem.lineTo(0, 0);
+    koordsystem.strokeStyle = "black";
+    koordsystem.stroke();
     drawKlimaGraph();
 }
 
