@@ -18,7 +18,7 @@ export const VerkehrFragenA1 = [
             { text: "Business (Mehr Platz und besseres Essen)", correct: "ok" },
             { text: "First (Oft so viel Platz, dass man die Füße ganz ausstrecken kann besonderen Service bekommt)", correct: "wrong" },
         ],
-        expl: "Erklärung: Je mehr Platz du im Flugzeug brauchst, desto weniger Menschen finden in der Maschine Platz. Um die selbe Anzahl Personen zu befördern muss der Flieger also öfter die selbe Route abfliegen und benötigt dafür mehr Kerosin."
+        expl: "Je mehr Platz du im Flugzeug brauchst, desto weniger Menschen finden in der Maschine Platz. Um die selbe Anzahl Personen zu befördern muss der Flieger also öfter dieselbe Route abfliegen und benötigt dafür mehr Treibstoff."
     }
 ]
 
@@ -42,7 +42,7 @@ export const VerkehrFragenA2 = [
             { text: "Auto", correct: "wrong" },
             { text: "Fahrrad", correct: "correct" },
         ],
-        expl: "Gerade mit ausleihbaren E-Scootern wird oft nicht gut umgegangen, weswegen sie teilweise nach nur 3 Monaten schon kaputt sind. Bei der Produktion brauchen sie zudem viel Energie, da die Akkus viele Rohstoffe brauchen. Daher lieber Fahrradfahren oder laufen. Das Auto ist die schlechteste Wahl, es benötigt selbst unter den besten Voraussetzungen etwa doppelt so viel Energie wie ein E-Scooter. Quelle: https://de.statista.com/statistik/daten/studie/1037358/umfrage/ \n co2-emissionen-von-e-scootern-im-vergleich-mit-anderen-verkehrsmitteln-in-den-usa/        "
+        expl: "Leihbare Scooter sind leider oft sehr schnell reif für den Müll. Die Produktion der Akkus braucht zudem viel Energie. Daher lieber Fahrradfahren oder laufen, das ist (fast) CO2-neutral. Das Auto ist die schlechteste Wahl, es benötigt selbst unter den besten Voraussetzungen etwa doppelt so viel Energie wie ein E-Scooter."
     },
 ]
 
@@ -66,7 +66,7 @@ export const VerkehrFragenA3 = [
             { text: "Lieber zwei mal fahren, dafür mit weniger Ladung im Kofferraum", correct: "wrong" },
             { text: "Kofferraum leerräumen", correct: "ok" },
         ],
-        expl: "Alle 3 Vorschläge sollten befolgt werden, denn sie alle verbrauchen unnötige Zusatzenergie. Der Dachträger verursacht viel Windwiderstand, und verbraucht so 1 Liter Kraftstoff mehr pro 100 km. Gepäck also lieber in den Kofferraum. Doch auch hier braucht Zusatzgewicht mehr Sprit. Quelle: www.co2online.de"
+        expl: "Sowohl Grün als auch Gelb sollte befolgt werden, denn das verbraucht unnötige Zusatzenergie. Der Dachträger verursacht viel Windwiderstand, und verbraucht so 1 Liter Kraftstoff mehr pro 100 km. Gepäck also lieber in den Kofferraum. Doch auch hier braucht Zusatzgewicht mehr Sprit."
     }
 ]
 
@@ -90,7 +90,7 @@ export const VerkehrFragenA4 = [
             { text: "SUV (Stadtgeländewagen mit erhöhtem Komfort) / Geländewagen", correct: "ok" },
             { text: "Sportwagen", correct: "wrong" }
         ],
-        expl: "Ein SUV ist schwerer als ein normales Auto und hat in der Regel Motoren mit mehr Leistung. Dadurch braucht er mehr Verkehr zum Fahren. Noch schlechter sind Sportwagen, die durch besonders starke Motoren extrem viel Benzin verbrauchen. Quelle: https://www.greenpeace.de/sites/www.greenpeace.de/ \n files/publications/s02571_gp_report_suv_09_2019_es.pdf"
+        expl: "Ein Minivan ist deutlich effizienter als ein SUV. Selbst ein Großraum-Van fährt noch sparsamer als der Geländewagen. Noch schlechter sind Sportwagen, die durch besonders starke Motoren extrem viel Benzin verbrauchen."
     }
 ]
 
@@ -114,7 +114,7 @@ export const VerkehrFragenA5 = [
             { text: "Elektroauto", correct: "correct" },
             { text: "Bus/Bahn/Tram", correct: "ok" }
         ],
-        expl: " Ein Auto zu bewegen braucht sehr viel Energie. Aktuell kommt ca 70,3 % des Stroms in Deutschland aus Nicht-Erneuerbaren Energien. DIese erzeugen viel CO2. Auch Bus oder Bahn brauchen mehr Strom als ein Elektrofahrrad. Quellen: www.umweltbundesamt.de, www.quarks.de/umwelt/klimawandel/co2-rechner-fuer-auto-flugzeug-und-co/"
+        expl: "Ein Auto zu bewegen braucht sehr viel Energie, auch bei Strom-Antrieb. Aktuell kommt ca 70,3 % des Stroms in Deutschland aus nicht-erneuerbaren Energien. Dessen Produktion erzeugt also CO2. Bus oder Bahn sind dank hoher Auslastung effizienter, brauchen aber mehr Strom als ein Elektrofahrrad."
     }
 ]
 

@@ -18,7 +18,7 @@ export const konsumFragenA1 = [
             { text: "Ich kaufe praktisches Plastik-Einweggeschirr", correct: "wrong" },
             { text: "Ich kaufe praktisches Papp-Einweggeschirr aus Recyclingfasern.", correct: "ok" }
         ],
-        expl: "Schon vorhandene Sachen von Bekannten auszuleihen ist immer die beste Option. So sparst du nicht nur Geld, sondern auch kräftig Ressourcen und damit immer auch CO2 ein. Auch wenn der Pappbecher aus recycelten Papier besteht, ist er meistens innen mit Plastik beschichtet, da er dir sonst einfach in deiner Hand 'zerlaufen' würde. Der Becher landet somit im Restmüll, wobei für einen Kilo Abfall im Schnitt 320g CO2 anfallen. Quelle: Pendo Verlag."
+        expl: "Vorhandenes auszuleihen ist immer die beste Option. So sparst du nicht nur Geld, sondern auch Ressourcen und damit CO2 ein. Papierbecher sind meist mit Plastik beschichtet, da sie dir sonst einfach in der Hand zerlaufen würden. Der Becher landet somit im Restmüll, wobei für ein kg Abfall im Schnitt 320g CO2 anfallen. Quelle: Pendo Verlag"
     }
 ]
 
@@ -42,7 +42,7 @@ export const konsumFragenA2 = [
             { text: "Ich nehme die Box mit nach Hause und schmeiße sie dort in den gelben Sack oder gebe sie meinen Eltern für die Wertstoffinsel mit.", correct: "correct" },
             { text: "Ich lasse die Box auf der Bank stehen, wo das Reinigungspersonal sie mitnehmen kann.", correct: "false" }
         ],
-        expl: "Öffentlich aufgestellte Mülleimer sind, wenn nicht anders gekennzeichnet, immer Restmüll. Dieser wird verbrannt, wobei viel CO2 frei wird und begrenzte Ressourcen einfach verschwendet werden. Kannst du eine Plastikverpackung absolut nicht vermeiden, dann versuche zumindest sie durch de richtige Entsorgung im gelben Sack oder einer Wertstoffinsel dem Recyclingkreislauf zuzuführen."
+        expl: "Öffentlich aufgestellte Mülleimer sind, wenn nicht anders gekennzeichnet, immer Restmüll. Dieser wird verbrannt, wobei viel CO2 frei wird und Ressourcen einfach verschwendet werden. Kannst du Plastik nicht vermeiden, so versuche zumindest, es durch die richtige Entsorgung im gelben Sack oder einer Wertstoffinsel zu recyclen."
     },
 ]
 
@@ -66,7 +66,7 @@ export const konsumFragenA3 = [
             { text: "Ich nehme den Recycling-Block.", correct: "correct" },
             { text: "Ich nehme den nicht chlorgebleichten Standardblock.", correct: "ok" }
         ],
-        expl: "Recyclingpapier verbraucht pro Kilo ganze 80% weniger Emissionen als chlorgebleichtes Standardpapier! Recyceltes Papier ist übrigens schon lange nicht mehr braun, bei vielen Blöcken sieht man gar keinen Unterschied mehr zum normalen Papier."
+        expl: "Recyclingpapier verbraucht pro kg 80% weniger Emissionen als chlorgebleichtes Standardpapier! Recyceltes Papier ist übrigens schon lange nicht mehr braun, bei vielen Blöcken sieht man gar keinen Unterschied mehr zum normalen Papier."
     },
 ]
 
@@ -91,7 +91,7 @@ export const konsumFragenA4 = [
             { text: "Standard Baumwollshirt, Made in Poland", correct: "ok" },
             { text: "Bio Baumwollshirt, Made in Poland ", correct: "correct" }
         ],
-        expl: "Durch den Anbau von Baumwolle entstehen große Umweltschäden, besonders durch den Einsatz von Pflanzenschutzmitteln und den hohen Wasserverbrauch. Bio-Baumwolle schneidet im Vergleich deutlich besser ab als konventionell hergestellte. Zudem kannst du in den kleinen eingenähten Schildchen nachsehen, wo das T-Shirt hergestellt wurde und am besten Kleidung wählen, welche in Europa oder sogar Deutschland genäht wurde. Quelle: Pendo Verlag."
+        expl: "Durch den Baumwoll-Anbau entstehen große Umweltschäden, besonders durch Pestizide und einen hohen Wasserverbrauch. Bio-Baumwolle schneidet hierbei aber deutlich besser ab. Schau im eingenähten Schildchen nach, wo das T-Shirt hergestellt wurde und kaufe am besten in Europa genähte Kleidung."
     },
 
 ]
@@ -116,7 +116,7 @@ export const konsumFragenA5 = [
             { text: "In den gelben Sack/ die gelbe Tonne oder zur Wertstoffinsel.", correct: "correct" },
             { text: "In die Papiertonne", correct: "false" }
         ],
-        expl: "Tetrapacks können nur recycelt werden, wenn sie über den gelben Sack entsorgt werden. In vielen Städten gibt es statt dem gelben Sack Wertstoffinseln, die normalerweise in Fußweite zu erreichen sind. Auf keinen Fall darf der Getränkekarton in die Papiertonne, denn obwohl er von außen aussieht wie aus Pappe, ist im inneren Plastik verarbeitet."
+        expl: "Tetrapacks können nur recycelt werden, wenn sie über den gelben Sack entsorgt werden. In vielen Städten gibt es hierfür statt dem gelben Sack öffentliche Wertstoffinseln. Auf keinen Fall darf der Getränkekarton in die Papiertonne, denn obwohl er von außen aussieht wie aus Pappe, ist im inneren Plastik verarbeitet."
 
     }
 ]

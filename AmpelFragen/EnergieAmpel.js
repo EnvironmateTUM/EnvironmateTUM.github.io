@@ -20,7 +20,7 @@ export const energieFragenA1 = [
             { text: "Ich hänge die Jeans draußen auf die Wäscheleine.", correct: "correct" }
         ],
         tipp: "Wäscheleine",
-        expl: "Der Wäschetrockner verbraucht, auch im Eco-Programm, sehr viel Energie und sollte wenn überhaupt nur im Notfall verwendet werden. Vor allem im Sommer trocknet die Wäsche draußen sehr schnell und macht einen Trockner eigentlich überflüssig. Über die Heizung solltest du am besten nichts hängen, da es im Inneren zu einem Hitzestau kommen kann und die Kleidung im Schlimmsten Fall sogar in Brand geraten könnte."
+        expl: "Der Wäschetrockner verbraucht, auch im Eco-Programm, sehr viel Energie und sollte nur im Notfall verwendet werden. Vor allem im Sommer trocknet die Wäsche draußen sehr schnell und macht einen Trockner überflüssig. Über die Heizung solltest du am besten nichts hängen, da es im Inneren zu einem Hitzestau mit Brandfolge kommen könnte."
     },
     
   
@@ -74,11 +74,11 @@ export const energieFragenA3 = [
         type: "ampel",
         question: "Du willst dir Nudeln kochen, dafür brauchst du einen Liter Wasser. Wie erhitzt du diesen am effizientesten?",
         answers: [
-            { text: "Ich benutze einen Induktionsherd", correct: "correct" },
+            { text: "Ich benutze einen Induktionsherd", correct: "ok" },
             { text: "Ich benutze einen konventionellen Herd", correct: "wrong" },
-            { text: "Ich benutze den Wasserkocher", correct: "ok" },
+            { text: "Ich benutze den Wasserkocher", correct: "correct" },
         ],
-        expl: "Ein konventioneller Herd muss zunächst die Herdplatte, dann den Topf und dann erst das Wasser erhitzen. Ein Wasserkocher erhitzt zwar das Wasser direkt, trotzdem ist ein Induktionsherd, auf Grund des Verfahrens, effizienter.",
+        expl: "Ein konventioneller Herd muss zunächst die Herdplatte, dann den Topf und dann erst das Wasser erhitzen. Wasserkocher und Induktionsherd erhitzen das Wasser direkt, bei kleineren Wassermengen ist der Wasserkocher aber sparsamer als der Induktionsherd.",
     },
 ]
 
@@ -102,7 +102,7 @@ export const energieFragenA4 = [
             {text: "Der Kleine", correct: "wrong"},
             {text: "Der Passende", correct: "correct"}
             ],
-        expl: "Beim Großen dauert das Kochen länger, da nur ein Teil des Topfs beheizt wird. Ist er zu klein, heizt die Platte jedoch am Topf vorbei und die Energie geht direkt verloren."
+        expl: "Beim großen Topf dauert das Kochen länger, da nur ein Teil des Topfs beheizt wird. Ist er zu klein, heizt die Platte jedoch am Topf vorbei und die Energie geht direkt verloren."
         }
 ]
 
@@ -126,7 +126,7 @@ export const energieFragenA5 = [
             {text: "Statt einen Film zu streamen, kaufe ich lieber eine DVD.", correct: "wrong"},
             {text: "Ich streame nicht jeden Tag, reduziere die Auflösung von Videos, höre Musik anstatt mir Musik-Videos anzuschauen und reduziere damit den Energieverbrauch.", correct: "correct"}
             ],
-        expl: "Das Streamen am Laptop oder Tablet kann im Vergleich zum Streamen auf einem Fernseher bis zu 20 kg CO2 im Jahr einsparen. Wenn man sich die DVD per Post schicken lässt, braucht sie in etwa gleich viel Energie wie Streaming, außerdem werden Rohstoffe für die Herstellung benötigt. Also gilt: Insgesamt weniger streamen und den Energieverbrauch durch geringere Auflösung reduzieren. Nicht vergessen: Geräte ausschalten! Der Stand-by Modus verbraucht sehr viel Energie.  Quelle: www.jetzt.de und www.utopia.de"
+        expl: "Eine Stunde Streaming am Smartphone verbraucht im Vergleich zum Streamen auf einem Fernseher 6 Mal weniger CO2. Wenn man sich die DVD per Post schicken lässt, braucht sie in etwa gleich viel Energie wie Streaming, außerdem werden Rohstoffe für die Herstellung benötigt. Also gilt: Insgesamt weniger streamen und den Energieverbrauch durch geringere Auflösung reduzieren."
     },
     
     
