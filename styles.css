@@ -287,6 +287,8 @@ background-color: white;}
     
 }
 
+
+
 .endBubble{
     height: 10%;
     display: grid;
@@ -323,6 +325,16 @@ background-color: white;}
 .btn.ok{
     border: 1px solid hsl(45, 100%, 38%);
     background-color: hsl(45, 100%, 50%);
+}
+
+.impressum-btn{
+    position: absolute;
+    font-size: 8px;
+left: 2px;
+bottom: 2px;
+border-radius: 7px;
+    padding: 5px 10px;
+
 }
 
 .btn-gr{

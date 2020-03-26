@@ -41,6 +41,7 @@ const klimaBasisButton = document.getElementById("kauf-btn-basis");
 const klimaXLButton = document.getElementById("kauf-btn-XL");
 const storyNextButton = document.getElementById("intro-next");
 const videoNextButton = document.getElementById("video-next");
+const impressumButton = document.getElementById("impressum");
 const questionContainerElement = document.getElementById("question-container");
 const questionElement = document.getElementById("question");
 const answerButtonsElement = document.getElementById("answer-buttons");
@@ -51,6 +52,14 @@ const infoButton = document.getElementById("info");
 const itBox = document.getElementById("info/tipp-box");
 const endScreen = document.getElementById("endScreen");
 const endText = document.getElementById("endText");
+
+const folge1text = document.getElementById("folge1");
+const folge2text = document.getElementById("folge2");
+const folge3text = document.getElementById("folge3");
+
+const folge1Bild = document.getElementById("folge1Bild");
+const folge2Bild = document.getElementById("folge2Bild");
+const folge3Bild = document.getElementById("folge3Bild");
 
 
 
@@ -122,6 +131,7 @@ klimaBasisButton.addEventListener("click", kaufenBasis);
 NochmalButton.addEventListener("click", retry);
 VerlassenButton.addEventListener("click", leave);
 druckenButton.addEventListener("click", drucken);
+impressumButton.addEventListener("click", oeffneImpressum);
 
 document.body.background = "./Bilder/pngZeichenfläche 1.png";
 document.body.style.backgroundSize = "100% 100%";
@@ -842,15 +852,19 @@ export function gameOver() {
     if (levelAkt < 5) {
 
 
-        intro.innerText = "Du hast es leider nicht geschafft die Erde zu retten "
-        endText.innerText = "Es ist das Jahr " + JahrAkt + ", du bist jetzt " + alterAkt + " Jahre alt" + "und diese Folgen sind bereits zu spüren. \n" + "Bis zu einem Fünftel der Weltbevölkerung ist durch häufigere Überschwemmungen gefährdet. \n Es beginnt ein weltweites Artensterben, vor allem in Feuchtgebieten, Wäldern und Korallenriffen. \n 300 Millionen Menschen, mehr als 3 mal die Einwohner Deutschlands, sind von dauerhafter Überschwemmung ihres Zuhauses betroffen. \n In Europa herrscht alle 10 Jahre eine schwere Dürre. \n  ";
-        //videoNextButton.classList.remove("hide");
+
+        intro.innerText = eingabeName + ", Du hast es leider nicht geschafft die Erde zu retten. "
+        endText.innerText = "Es ist das Jahr 2050, du bist jetzt " + alterAkt + " Jahre alt " + "und diese Folgen sind bereits zu spüren: \n";
+        folge1text.innerText = "Bis zu 3,2 Milliarden Menschen sind von Wasserknappheit betroffen, das sind dann fast ein Drittel der Weltbevölkerung .";
+        folge2text.innerText = "Ein Weltweites Artensterben hat eingesetzt, vor allem in Feuchtgebieten, Wäldern und Korallenriffen.";
+        folge3text.innerText = "Der Abschmelzprozess Grönlands und der westlichen Antarktis ist unaufhaltbar geworden.";
 
         levelButtons[levelAkt].removeEventListener("click", backToKat);
         levelButtons[levelAkt].classList.add("btn-grau");
         levelButtons[levelAkt].classList.remove("btn");
     }
     else {
+        console.log(gradErwärmung);
         level.classList.remove("hide")
         if (gradErwärmung < 1) {
             intro.innerText = "Sehr gut, du bist ein echter Klimaprofi, " + eingabeName + "."
@@ -866,7 +880,11 @@ export function gameOver() {
         }
         else {
             intro.innerText = eingabeName + ", Du hast es leider nicht geschafft die Erde zu retten. "
-            endText.innerText = "Es ist das Jahr 2050, du bist jetzt " + alterAkt + " Jahre alt " + "und diese Folgen sind bereits zu spüren: \n" + "Bis zu einem Fünftel der Weltbevölkerung ist durch häufigere Überschwemmungen gefährdet. \n Es beginnt ein weltweites Artensterben, vor allem in Feuchtgebieten, Wäldern und Korallenriffen. \n 300 Millionen Menschen, mehr als 3 mal die Einwohner Deutschlands, sind von dauerhafter Überschwemmung ihres Zuhauses betroffen. \n In Europa herrscht alle 10 Jahre eine schwere Dürre. \n  ";
+            endText.innerText = "Es ist das Jahr 2050, du bist jetzt " + alterAkt + " Jahre alt " + "und diese Folgen sind bereits zu spüren: \n";
+            folge1text.innerText = "Bis zu 3,2 Milliarden Menschen sind von Wasserknappheit betroffen, das sind dann fast ein Drittel der Weltbevölkerung .";
+            folge2text.innerText = "Ein Weltweites Artensterben hat eingesetzt, vor allem in Feuchtgebieten, Wäldern und Korallenriffen.";
+            folge3text.innerText = "Der Abschmelzprozess Grönlands und der westlichen Antarktis ist unaufhaltbar geworden.";
+
         }
     }
     let txt = "hier";
@@ -938,7 +956,12 @@ function retry() {
 }
 
 function leave() {
-    console.log("Credits")
+    oeffneImpressum();
+    location.reload();
+}
+
+function oeffneImpressum() {
+    window.open("./Bilder/Impressum und Quellennachweis.pdf", "Impressum");
 }
 
 function loadEndscreen() {
