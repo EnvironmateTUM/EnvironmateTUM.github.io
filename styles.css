@@ -287,7 +287,13 @@ background-color: white;}
     
 }
 
-
+.zertText{
+    font-size: 12px;
+    position: absolute;
+    top: 22%;
+    left: 8%;
+    background-color: transparent;
+}
 
 .endBubble{
     height: 10%;

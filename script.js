@@ -52,6 +52,8 @@ const infoButton = document.getElementById("info");
 const itBox = document.getElementById("info/tipp-box");
 const endScreen = document.getElementById("endScreen");
 const endText = document.getElementById("endText");
+const endText2 = document.getElementById("endText2");
+const zertifikatText = document.getElementById("ZertifikatText");
 
 const folge1text = document.getElementById("folge1");
 const folge2text = document.getElementById("folge2");
@@ -854,10 +856,14 @@ export function gameOver() {
 
 
         intro.innerText = eingabeName + ", Du hast es leider nicht geschafft die Erde zu retten. "
-        endText.innerText = "Es ist das Jahr 2050, du bist jetzt " + alterAkt + " Jahre alt " + "und diese Folgen sind bereits zu spüren: \n";
+        endText.innerText = "Es ist das Jahr 2050, du bist jetzt " + alterAkt + " Jahre alt. " + "Du hast in " + levelAkt + " Leveln einen Anstieg von " + gradErwärmung + " Grad erspielt und diese Folgen sind bereits zu spüren: ";
         folge1text.innerText = "Bis zu 3,2 Milliarden Menschen sind von Wasserknappheit betroffen, das sind dann fast ein Drittel der Weltbevölkerung .";
         folge2text.innerText = "Ein Weltweites Artensterben hat eingesetzt, vor allem in Feuchtgebieten, Wäldern und Korallenriffen.";
         folge3text.innerText = "Der Abschmelzprozess Grönlands und der westlichen Antarktis ist unaufhaltbar geworden.";
+
+        folge1Bild.src = "./Bilder/Folgen/wasserknappheit";
+        folge2Bild.src = "./Bilder/Folgen/korallenbleiche";
+        folge3Bild.src = "./Bilder/Folgen/eisbär";
 
         levelButtons[levelAkt].removeEventListener("click", backToKat);
         levelButtons[levelAkt].classList.add("btn-grau");
@@ -866,36 +872,43 @@ export function gameOver() {
     else {
         console.log(gradErwärmung);
         level.classList.remove("hide")
-        if (gradErwärmung < 1) {
-            intro.innerText = "Sehr gut, du bist ein echter Klimaprofi, " + eingabeName + "."
-            endText.innerText = "Es ist das Jahr 2050, du bist jetzt " + alterAkt + " Jahre alt. \n Selbst wenn du es geschafft hast, dass die Erde sich fast nicht erwärmt hat: \n Seit 1850 ist die Temperatur um über 1 Grad gestiegen. \n Der Nordpol wird im Sommer komplett abschmelzen und nur im Winter mit Eis bedeckt sein. \n Durch das abgeschmolzene Eis ist der Meeresspiegel gestiegen, und hat einige Küstenstädte überflutet. \n Wenn du genauere Folgen für mehrere Temperaturen wissen möchtest, schau doch zum Beispiel hier: www.oekosystem-erde.de/html/klimawandel-03.html";
-        }
-        else if (gradErwärmung < 1.5) {
-            intro.innerText = "Das war schon ganz gut, aber es gibt noch Luft nach oben, " + eingabeName + + "."
-            endText.innerText = "Es ist das Jahr 2050, du bist jetzt " + alterAkt + " Jahre alt " + " und diese Folgen sind bereits zu spüren: \n" + "Bis zu 2 Milliarden Menschen sind von Wasserknappheit betroffen, das ist mehr als 20 mal die Einwohner Deutschlands. \n 20-30 % aller biologischen Arten (also Pflanzen und Tiere) sind vom Aussterben bedroht. \n Der Abschmelzprozess Grönlands und der westlichen Antarktis ist unaufhaltbar geworden. \n  ";
-        }
-        else if (gradErwärmung < 2) {
+        if (gradErwärmung < 2) {
             intro.innerText = "Mit deiner Hlfe ist es uns gelungen die Klimaerwärmung in Grenzen zu halten, " + eingabeName + + "."
-            endText.innerText = "Es ist das Jahr 2050, du bist jetzt " + alterAkt + " Jahre alt " + "und diese Folgen sind bereits zu spüren: \n" + "Bis zu einem Fünftel der Weltbevölkerung ist durch häufigere Überschwemmungen gefährdet. \n Es beginnt ein weltweites Artensterben, vor allem in Feuchtgebieten, Wäldern und Korallenriffen. \n 300 Millionen Menschen, mehr als 3 mal die Einwohner Deutschlands, sind von dauerhafter Überschwemmung ihres Zuhauses betroffen. \n In Europa herrscht alle 10 Jahre eine schwere Dürre. \n  ";
+            endText.innerText = "Es ist das Jahr 2050, du bist jetzt " + alterAkt + " Jahre alt. " + "Du hast in " + levelAkt + " Leveln einen Anstieg von " + gradErwärmung + " Grad erspielt und diese Folgen sind bereits zu spüren: \n";
+            folge1text.innerText = "Der Nordpol wird im Sommer komplett abschmelzen und nur im Winter mit Eis bedeckt sein. Dadurch sind auch Küstenstädte komplett überschwemmt worden.";
+            folge2text.innerText = "Bis zu 1,7 Milliarden Menschen sind von Wasserknappheit betroffen, das ist mehr als 20 mal die Einwohner Deutschlands.";
+            folge3text.innerText = "20-30 % aller biologischen Arten (also Pflanzen und Tiere) sind vom Aussterben bedroht.";
+
+            folge1Bild.src = "./Bilder/Folgen/überschwemmung";
+            folge2Bild.src = "./Bilder/Folgen/wasserknappheit";
+            folge3Bild.src = "./Bilder/Folgen/korallenbleiche";
+
+
         }
         else {
             intro.innerText = eingabeName + ", Du hast es leider nicht geschafft die Erde zu retten. "
-            endText.innerText = "Es ist das Jahr 2050, du bist jetzt " + alterAkt + " Jahre alt " + "und diese Folgen sind bereits zu spüren: \n";
+            endText.innerText = "Es ist das Jahr 2050, du bist jetzt " + alterAkt + " Jahre alt. " + "Du hast in " + levelAkt + " Leveln einen Anstieg von " + gradErwärmung + " Grad erspielt und diese Folgen sind bereits zu spüren: \n";
             folge1text.innerText = "Bis zu 3,2 Milliarden Menschen sind von Wasserknappheit betroffen, das sind dann fast ein Drittel der Weltbevölkerung .";
             folge2text.innerText = "Ein Weltweites Artensterben hat eingesetzt, vor allem in Feuchtgebieten, Wäldern und Korallenriffen.";
             folge3text.innerText = "Der Abschmelzprozess Grönlands und der westlichen Antarktis ist unaufhaltbar geworden.";
 
+            folge1Bild.src = "./Bilder/Folgen/wasserknappheit";
+            folge2Bild.src = "./Bilder/Folgen/korallenbleiche";
+            folge3Bild.src = "./Bilder/Folgen/eisbär";
         }
     }
     let txt = "hier";
-    endText.innerText += "Wenn du dich dafür interessierst, welche Auswirkungen eine Erderwärmung von mehr als 4°C für die Menschheit hat, dann klicke "
-    endText.innerHTML += txt.link("https://www.nabu.de/umwelt-und-ressourcen/klima-und-luft/klimawandel/11420.html")
+    endText2.innerText += "Wenn du dich dafür interessierst, welche Auswirkungen eine Erderwärmung von mehr als 4°C für die Menschheit hat, dann klicke "
+    endText2.innerHTML += txt.link("https://www.nabu.de/umwelt-und-ressourcen/klima-und-luft/klimawandel/11420.html")
 
 
 
 }
 
 function drucken() {
+    let JahrAkt = 2020 + 6 * levelAkt;
+    let alterAkt = JahrAkt - 2020 + parseInt(eingabeAlter);
+
     let winWidth = window.document.body.clientWidth
 
     hideForscher();
@@ -903,6 +916,15 @@ function drucken() {
 
     //zertifikat.width = winWidth
     zertifikat.classList.remove("hide");
+    zertifikatText.classList.remove("hide");
+    zertifikatText.innerText = "Liebe/r " + eingabeName + "\n \n Es ist das Jahr 2050, du bist jetzt " + alterAkt + " Jahre alt. Du hast in " + levelAkt + " Leveln einen Anstieg von " + gradErwärmung + " Grad erspielt \n";
+
+    if (gradErwärmung < 2) {
+        zertifikatText.innerText += "Damit bist du unter den kritischen 2 Grad geblieben. Doch da die Temperatur seit 1850 bereits um über 1 Grad gestiegen ist, gibt es folgende Auswirkungen auf der Welt: \n Der Nordpol wird im Sommer komplett abschmelzen und nur im Winter mit Eis bedeckt sein. Dadurch sind auch Küstenstädte komplett überschwemmt worden. \n Bis zu 1,7 Milliarden Menschen sind von Wasserknappheit betroffen, das ist mehr als 20 mal die Einwohner Deutschlands. \n 20-30 % aller biologischen Arten (also Pflanzen und Tiere) sind vom Aussterben bedroht."
+    }
+    else {
+        zertifikatText.innerText += "Das ist mehr als das 2-Grad-Ziel. Durch die Erwärmung gibt es folgende Auswirkungen auf der Welt: \n Bis zu 3,2 Milliarden Menschen sind von Wasserknappheit betroffen, das sind dann fast ein Drittel der Weltbevölkerung . \n Ein Weltweites Artensterben hat eingesetzt, vor allem in Feuchtgebieten, Wäldern und Korallenriffen. \n Der Abschmelzprozess Grönlands und der westlichen Antarktis ist unaufhaltbar geworden."
+    }
 
 
     window.print();
@@ -911,6 +933,7 @@ function drucken() {
     forscherW.classList.remove("hide");
     endScreen.classList.remove("hide");
     zertifikat.classList.add("hide");
+    zertifikatText.classList.add("hide");
 }
 
 function retry() {
