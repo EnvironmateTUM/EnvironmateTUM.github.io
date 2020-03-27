@@ -59,9 +59,7 @@ const folge1text = document.getElementById("folge1");
 const folge2text = document.getElementById("folge2");
 const folge3text = document.getElementById("folge3");
 
-const folge1Bild = document.getElementById("folge1Bild");
-const folge2Bild = document.getElementById("folge2Bild");
-const folge3Bild = document.getElementById("folge3Bild");
+const folgenBilder = document.getElementById("folgenBilder");
 
 
 
@@ -81,10 +79,25 @@ let nichtErsterLauf = false;
 let punkteNeu = 0;
 let gradErwärmung = 0;
 let gameO = false;
+let folge1Bild = document.createElement("img");
+let folge2Bild = document.createElement("img");
+let folge3Bild = document.createElement("img");
 let ampel = document.createElement("img");
 let restart = false;
 
+folge1Bild.style.height = "100px";
+folge2Bild.style.height = "100px";
+folge3Bild.style.height = "100px";
 
+folge1Bild.style.width = "133px";
+folge2Bild.style.width = "133px";
+folge3Bild.style.width = "133px";
+
+
+
+folgenBilder.appendChild(folge1Bild);
+folgenBilder.appendChild(folge2Bild);
+folgenBilder.appendChild(folge3Bild);
 
 const levelButtons = [
     level1Button,
@@ -861,9 +874,9 @@ export function gameOver() {
         folge2text.innerText = "Ein Weltweites Artensterben hat eingesetzt, vor allem in Feuchtgebieten, Wäldern und Korallenriffen.";
         folge3text.innerText = "Der Abschmelzprozess Grönlands und der westlichen Antarktis ist unaufhaltbar geworden.";
 
-        folge1Bild.src = "./Bilder/Folgen/wasserknappheit";
-        folge2Bild.src = "./Bilder/Folgen/korallenbleiche";
-        folge3Bild.src = "./Bilder/Folgen/eisbär";
+        folge1Bild.src = "./Bilder/Folgen/wasserknappheit.png";
+        folge2Bild.src = "./Bilder/Folgen/korallenbleiche.png";
+        folge3Bild.src = "./Bilder/Folgen/eisbär.png";
 
         levelButtons[levelAkt].removeEventListener("click", backToKat);
         levelButtons[levelAkt].classList.add("btn-grau");
@@ -879,8 +892,8 @@ export function gameOver() {
             folge2text.innerText = "Bis zu 1,7 Milliarden Menschen sind von Wasserknappheit betroffen, das ist mehr als 20 mal die Einwohner Deutschlands.";
             folge3text.innerText = "20-30 % aller biologischen Arten (also Pflanzen und Tiere) sind vom Aussterben bedroht.";
 
-            folge1Bild.src = "./Bilder/Folgen/überschwemmung";
-            folge2Bild.src = "./Bilder/Folgen/wasserknappheit";
+            folge1Bild.src = "./Bilder/Folgen/überschwemmung.png";
+            folge2Bild.src = "./Bilder/Folgen/wasserknappheit.png";
             folge3Bild.src = "./Bilder/Folgen/korallenbleiche";
 
 
@@ -892,9 +905,9 @@ export function gameOver() {
             folge2text.innerText = "Ein Weltweites Artensterben hat eingesetzt, vor allem in Feuchtgebieten, Wäldern und Korallenriffen.";
             folge3text.innerText = "Der Abschmelzprozess Grönlands und der westlichen Antarktis ist unaufhaltbar geworden.";
 
-            folge1Bild.src = "./Bilder/Folgen/wasserknappheit";
-            folge2Bild.src = "./Bilder/Folgen/korallenbleiche";
-            folge3Bild.src = "./Bilder/Folgen/eisbär";
+            folge1Bild.src = "./Bilder/Folgen/wasserknappheit.png";
+            folge2Bild.src = "./Bilder/Folgen/korallenbleiche.png";
+            folge3Bild.src = "./Bilder/Folgen/eisbär.png";
         }
     }
     let txt = "hier";
