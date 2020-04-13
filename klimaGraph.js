@@ -125,10 +125,21 @@ function klimaGraphSmall() {
 }
 
 function klimaGraphResize() {
-    let sizingfaktor
-    sizingfaktor = 1067 / window.document.body.clientWidth;
-    console.log(sizingfaktor)
-    // graph
+    let sizingfaktorW
+    let sizingfaktorH
+    sizingfaktorW = 1067 / (window.document.body.clientWidth * 0.78);
+    sizingfaktorH = 673 / (window.document.body.clientHeight * 0.8);
+    // 673 / (window.document.body.clientHeight * 0.8);
+    /*
+    if ((673 / (window.document.body.clientHeight * 0.8)) < sizingfaktor) {
+        sizingfaktor = 673 / (window.document.body.clientHeight * 0.8);
+    }
+    */
+    // 673 height
+    //console.log(sizingfaktor)
+    // sizingfaktor = sizingfaktor * 1.05
+    graph.width = 1067 / (sizingfaktorW * 1.03);
+    graph.height = 673 / (sizingfaktorH * 1.03);
 
 
 }
