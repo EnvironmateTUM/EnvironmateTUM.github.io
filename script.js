@@ -886,7 +886,7 @@ export function gameOver() {
         console.log(gradErwärmung);
         level.classList.remove("hide")
         if (gradErwärmung < 2) {
-            intro.innerText = "Mit deiner Hlfe ist es uns gelungen die Klimaerwärmung in Grenzen zu halten, " + eingabeName + + "."
+            intro.innerText = "Mit deiner Hilfe ist es uns gelungen die Klimaerwärmung in Grenzen zu halten, " + eingabeName + "."
             endText.innerText = "Es ist das Jahr 2050, du bist jetzt " + alterAkt + " Jahre alt. " + "Du hast in " + levelAkt + " Leveln einen Anstieg von " + gradErwärmung + " Grad erspielt und diese Folgen sind bereits zu spüren: \n";
             folge1text.innerText = "Der Nordpol wird im Sommer komplett abschmelzen und nur im Winter mit Eis bedeckt sein. Dadurch sind auch Küstenstädte komplett überschwemmt worden.";
             folge2text.innerText = "Bis zu 1,7 Milliarden Menschen sind von Wasserknappheit betroffen, das ist mehr als 20 mal die Einwohner Deutschlands.";
