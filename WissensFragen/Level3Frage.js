@@ -7,9 +7,8 @@ export const WQuestionsL3 = [
             { text: "1-2 Kilogramm CO2", correct: false },
             { text: "15-20  Kilogramm CO2", correct: false }
         ],
-        expl: "Die Herstellung eines einzigen Baumwollshirts erzeugt je nach Größe und Herstellungsart ca. 5-9 Kilogramm CO2. Da die meisten Shirts zudem nicht lange getragen werden und unter schlechten Arbeitsbedingungen in Entwicklungsländern hergestellt werden, fördert unser Kleidungskonsum zudem die Ressourcenverschwendung und die Ausbeutung von Arbeitern."
+        expl: "Allein durch den Konsum von Kleidung verursacht der Durchschnitts-Deutsche ganze 200kg CO2 im Jahr! Da die meisten Shirts nicht lange getragen werden und unter katastrophalen Arbeitsbedingungen hergestellt werden, fördert unser der Konsum zudem die Ressourcenverschwendung und die Ausbeutung von Arbeitern. Quelle: Focus Online"
     },
-
 
     {
         type: "singleChoice",
@@ -19,7 +18,7 @@ export const WQuestionsL3 = [
             { text: "ca. 10%", correct: false },
             { text: "ca. 40%", correct: true }
         ],
-        expl: "Ganze 40% trägt dein Konsum zu deinem jährlichen Ausstoß an CO2 bei und macht damit neben Verkehr, Ernährung und Energie den größten Teil aus. Indem du deinen täglichen Konsum umstellst kannst du somit deinen CO2-Ausstoß deutlich verkleinern. Quelle: Umweltbundesamt"
+        expl: "Ganze 40% trägt dein Konsum zu deinem jährlichen CO2-Ausstoß bei und macht damit den größten Anteil aus. Indem du deinen täglichen Konsum umstellst, kannst du somit deinen Ausstoß deutlich verkleinern. Quelle: Umweltbundesamt"
     },
 
     {
@@ -30,7 +29,7 @@ export const WQuestionsL3 = [
             { text: "200 Kilogramm CO2", correct: true },
             { text: "50-60  Kilogramm CO2", correct: false }
         ],
-        expl: "Allein durch den Konsum von Kleidung und anderen Textilien verursacht der durchschnittliche Deutsche ganze 200kg CO2 im Jahr! Da die meisten Shirts zudem nicht lange getragen werden und unter schlechten Arbeitsbedingungen in Entwicklungsländern hergestellt werden, fördert unser Kleidungskonsum zudem die Ressourcenverschwendung und die Ausbeutung von Arbeitern. Quelle: Statistisches Bundesamt"
+        expl: "Allein durch den Konsum von Kleidung verursacht der Durchschnitts-Deutsche ganze 200kg CO2 im Jahr! Da die meisten Shirts nicht lange getragen werden und unter katastrophalen Arbeitsbedingungen hergestellt werden, fördert unser der Konsum zudem die Ressourcenverschwendung und die Ausbeutung von Arbeitern. Quelle: Focus Online"
     },
 
     {
@@ -41,8 +40,19 @@ export const WQuestionsL3 = [
             { text: "Da Plastik leichter ist als andere Verpackungsmaterialien, kann die  Klimabilanz einer Plastikflasche unter Umständen besser sein, als die einer Glasflasche.", correct: true },
             { text: "Durch zu viel Plastikmüll in den Meeren sinkt die Fähigkeit der Ozeane CO2 zu binden und damit aus der Atmosphäre zu entfernen.", correct: false }
         ],
-        expl: "Neben den sichtbaren Problemen des hohen Plastikverbrauchs führt vor allem die Herstellung von Kunststoffen mit Erdöl zu einer verheerenden Klimabilanz. Versuche in deinem Alltag, Plastik wo es geht zu vermeiden und vorhandene Verpackungen zu recyceln. Plastik gehört nicht in den Restmüll, sondern, je nach örtlichen Regelungen, in den gelben Sack oder den Plastikcontainer deiner nächsten Wertstoffinsel. Quelle: Greenpeace"
+        expl: "Die Herstellung von Plastik durch Erdöl führt zu einer verheerenden Klimabilanz. Versuche im Alltag Plastik zu vermeiden und Verpackungen zu recyceln. Plastikverpackungen gehören nicht in den Restmüll, sondern in den gelben Sack oder den Plastikcontainer der Wertstoffinsel. Quelle: Greenpeace"
     },
+
+    {
+        type: "singleChoice",
+        question: "Plastik führt nicht nur zu einem großen Müllproblem, sondern beschleunigt durch den Ausstoß von CO2 von der Produktion bis zur Entsorgung auch noch kräftig den Klimawandel. Dem jährlichen CO2-Ausstoß wievieler Kohlekraftwerke entspricht die dabei weltweit ausgestoßene Menge in einem Jahr?",
+        answers: [
+            { text: "ca. 136 Kohlekraftwerke", correct: true },
+            { text: "ca. 18 Kohlekraftwerke", correct: false },
+            { text: "ca. 63 Kohlekraftwerke", correct: false }
+        ],
+        expl: "Die Herstellung von Plastik durch Erdöl führt zu einer verheerenden Klimabilanz. Versuche im Alltag Plastik zu vermeiden und Verpackungen zu recyceln. Plastikverpackungen gehören nicht in den Restmüll, sondern in den gelben Sack oder den Plastikcontainer der Wertstoffinsel. Quelle: Greenpeace"
+    }
 
 
 ]
