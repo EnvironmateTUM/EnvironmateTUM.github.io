@@ -101,7 +101,7 @@ export const konsumFragenA5 = [
         hintergrund: "./Bilder/Ampel/Konsum/Level5/AlleHintergründe.png",
         items: [
             "./Bilder/Ampel/Konsum/Level5/restmülltonne.png",
-            "./Bilder/Ampel/Konsum/Level5/gelber sack.png",
+            "./Bilder/Ampel/Konsum/Level5/gelbersack.png",
             "./Bilder/Ampel/Konsum/Level5/papiertonne.png"
         ],
         koords: [

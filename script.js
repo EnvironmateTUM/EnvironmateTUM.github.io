@@ -894,7 +894,7 @@ export function gameOver() {
 
             folge1Bild.src = "./Bilder/Folgen/überschwemmung.png";
             folge2Bild.src = "./Bilder/Folgen/wasserknappheit.png";
-            folge3Bild.src = "./Bilder/Folgen/korallenbleiche";
+            folge3Bild.src = "./Bilder/Folgen/korallenbleiche.png";
 
 
         }
