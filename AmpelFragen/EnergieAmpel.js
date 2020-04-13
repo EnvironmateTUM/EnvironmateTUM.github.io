@@ -122,9 +122,9 @@ export const energieFragenA5 = [
         type: "ampel",
         question: "Du möchtest dir über einen Streaming-Dienst (z.B. Netflix, AmazonPrime, etc.)  eine Serie anschauen. Wie hältst du den Energieverbrauch möglichst gering?",
         answers:[
-            {text: "Wenn man über das Smartphone oder das Tablet streamt, anstatt über den großen Fernseher, verbraucht man nur ein Sechstel des Stroms.", correct: ok},
-            {text: "Statt einen Film zu streamen, kaufe ich lieber eine DVD.", correct: wrong},
-            {text: "Ich streame Videos in reduzierter Auflösung nutze das WLAN anstatt mobile Daten.", correct: correct}
+            {text: "Wenn man über das Smartphone oder das Tablet streamt, anstatt über den großen Fernseher, verbraucht man nur ein Sechstel des Stroms.", correct: "ok"},
+            {text: "Statt einen Film zu streamen, kaufe ich lieber eine DVD.", correct: "wrong"},
+            {text: "Ich streame Videos in reduzierter Auflösung nutze das WLAN anstatt mobile Daten.", correct: "correct"}
             ],
         expl: "Eine Stunde Streaming am Smartphone verbraucht im Vergleich zum Streamen auf einem Fernseher 6 Mal weniger CO2. Wird die DVD geliefert, braucht sie in etwa gleich viel Energie wie Streaming, außerdem werden Rohstoffe für die Herstellung benötigt. Daten über Mobilfunk abzurufen, braucht wesentlich mehr Strom als die Datenübertragung über WLAN. Also gilt: Insgesamt weniger streamen und den Energieverbrauch durch geringere Auflösung reduzieren."
     },
