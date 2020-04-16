@@ -9,7 +9,7 @@ export const WQuestionsL4 = [
             { text: "Biogasanlagen", correct: false },
             { text: "Kohlekraftwerke", correct: true },
         ],
-        expl: "Kohlekraftwerke verbrennen Braunkohle um Energie zu gewinnen. Diese ist ein fossiler Brennstoff, der über viele Millionen Jahre unter der Erde entstanden ist und somit irgendwann aufgebraucht sein wird. Erneuerbare Energien sind von solchen begrenzten Rohstoffen unabhängig und gewinnen Energie aus Luft, Wasser oder Sonnenlicht. Quelle: ZDF"
+        expl: "Kohlekraftwerke verbrennen Braunkohle um Energie zu gewinnen. Diese ist ein fossiler Brennstoff, der über viele Millionen Jahre unter der Erde entstanden ist und somit irgendwann aufgebraucht sein wird. Erneuerbare Energien sind von solchen begrenzten Rohstoffen unabhängig und gewinnen Energie aus Luft, Wasser oder Sonnenlicht."
     },
 
     {
@@ -21,7 +21,7 @@ export const WQuestionsL4 = [
             { text: "100", correct: false },
             { text: "25", correct: true },
         ],
-        expl: "In Deutschland wird täglich eine unvorstellbare Menge von 460 Millionen kg Kohle gefördert. Würde man diese in Fußballstadien legen, so könnte man 25 pro Tag damit füllen. Quelle: Statista"
+        expl: "In Deutschland wird täglich eine unvorstellbare Menge von 460 Millionen kg Kohle gefördert. Würde man diese in Fußballstadien legen, so könnte man 25 pro Tag damit füllen."
     },
 
     {
@@ -33,7 +33,7 @@ export const WQuestionsL4 = [
             { text: "ca. 60%", correct: false },
             { text: "ca. 90%", correct: false }
         ],
-        expl: "Derzeit kommen leider nur 38% des deutschen Stroms aus erneuerbaren Quellen und Erdgas. Frage zu Hause deine Eltern, ob ihr in deiner Familie schon auf Ökostrom umgestellt habt. Das kostet wenige Euros mehr im Jahr und ist meistens mit ein paar Klicks erledigt. Quelle: BMWi"
+        expl: "Derzeit kommen leider nur 38% des deutschen Stroms aus erneuerbaren Quellen und Erdgas. Frage zu Hause deine Eltern, ob ihr in deiner Familie schon auf Ökostrom umgestellt habt. Das kostet wenige Euros mehr im Jahr und ist meistens mit ein paar Klicks erledigt."
     },
     {
         type: "singleChoice",
@@ -44,7 +44,7 @@ export const WQuestionsL4 = [
             { text: "ca. 34%", correct: false },
             { text: "ca. 94%", correct: false }
         ],
-        expl: "Richtig ist: Nur 13,9 % der Wärme kommt aktuell aus erneuerbaren Quellen. Dabei gibt es Zuschüsse für den Umbau eurer Heizung zu Hause. Quelle: BMWi"
+        expl: "Richtig ist: Nur 13,9 % der Wärme kommt aktuell aus erneuerbaren Quellen. Dabei gibt es Zuschüsse für den Umbau eurer Heizung zu Hause."
     },
 
     {
@@ -55,7 +55,7 @@ export const WQuestionsL4 = [
             { text: "ca. 13% weniger", correct: false },
             { text: "ca. 94% weniger", correct: true }
         ],
-        expl: "Ökostrom kommt beispielsweise aus Wind- oder Wasserkraftwerken, die viel klimafreundlicher sind als konventionelle Stromquellen wie Kohlekraftwerke. Frage deine Eltern, ob sie bereits auf Ökostrom umgestellt haben. Je nach Stromverbrauch kostet Ökostrom nur wenige Euros mehr im Jahr. Quelle: Pendos Verlag"
+        expl: "Ökostrom kommt beispielsweise aus Wind- oder Wasserkraftwerken, die viel klimafreundlicher sind als konventionelle Stromquellen wie Kohlekraftwerke. Frage deine Eltern, ob sie bereits auf Ökostrom umgestellt haben. Je nach Stromverbrauch kostet Ökostrom nur wenige Euros mehr im Jahr."
     },
 
     {
@@ -67,7 +67,7 @@ export const WQuestionsL4 = [
             { text: "ca. 30%", correct: false },
             { text: "ca. 2%", correct: false }
         ],
-        expl: "Strom und Heizung machen gemeinsam einen Anteil von ca. 20% an deinem jährlichen CO2-Ausstoß aus. Durch gezieltes Energiesparen und die Umstellung auf Ökostrom könnt ihr als Familie einen wichtigen Beitrag zum Klimaschutz leisten. Quelle: Umweltbundesamt"
+        expl: "Strom und Heizung machen gemeinsam einen Anteil von ca. 20% an deinem jährlichen CO2-Ausstoß aus. Durch gezieltes Energiesparen und die Umstellung auf Ökostrom könnt ihr als Familie einen wichtigen Beitrag zum Klimaschutz leisten."
     },
 
 

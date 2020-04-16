@@ -8,7 +8,7 @@ export const WQuestionsL2 = [
             { text: "E-Scooter fahren ist umweltfreundlicher als Busfahren.", correct: false },
             { text: "Ein Fahrrad braucht bei der Herstellung mehr Energie und ist deswegen schlechter als ein E-Scooter.", correct: false },
         ],
-        expl: "Mit Leihrollern wird oft nicht gut umgegangen, weswegen sie teilweise nach nur 3 Monaten schon kaputt sind. Bei der Produktion brauchen sie zudem viel Energie, da die Akkus viele Rohstoffe verbrauchen. Daher lieber Busfahren oder falls möglich auf S-, U- oder Trambahn umsteigen. Quelle: Süddeutsche Zeitung"
+        expl: "Mit Leihrollern wird oft nicht gut umgegangen, weswegen sie teilweise nach nur 3 Monaten schon kaputt sind. Bei der Produktion brauchen sie zudem viel Energie, da die Akkus viele Rohstoffe verbrauchen. Daher lieber Busfahren oder falls möglich auf S-, U- oder Trambahn umsteigen."
     },
 
     {
@@ -20,7 +20,7 @@ export const WQuestionsL2 = [
             { text: "ca. 20%", correct: true },
             { text: "ca. 75%", correct: false }
         ],
-        expl: "Der Verkehr macht ca. 20% an deinem jährlichen CO2-Ausstoß aus. Durch das Vermeiden von Flugreisen und häufigem Autofahren kannst du mit deiner Familie hierbei viel Einsparen. Quelle: Umweltbundesamt"
+        expl: "Der Verkehr macht ca. 20% an deinem jährlichen CO2-Ausstoß aus. Durch das Vermeiden von Flugreisen und häufigem Autofahren kannst du mit deiner Familie hierbei viel Einsparen."
     }
 
 ]
