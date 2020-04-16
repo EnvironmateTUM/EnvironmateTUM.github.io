@@ -158,26 +158,32 @@ function startGame() {
     document.body.style.backgroundSize = "100% 100%";
     eingabeName = nameEingabe.value;
     eingabeAlter = alterEingabe.value;
-    MenuContainer.classList.add("hide");
-    startButton.classList.add("hide");
-    restartButton.classList.add("hide");
-    forscherWinken.classList.add("hide")
+    eingabeAlter = Number(eingabeAlter);
+    console.log(eingabeAlter)
+    if (eingabeName == "" || Number.isNaN(eingabeAlter) || eingabeAlter == 0) {
+        window.alert("Bitte gebe deinen Namen und dein Alter an.")
+    }
+    else {
+        MenuContainer.classList.add("hide");
+        startButton.classList.add("hide");
+        restartButton.classList.add("hide");
+        forscherWinken.classList.add("hide")
 
-    score = 0;
+        score = 0;
 
 
-    ErnährungButton.dataset.kat = "Er";
-    KonsumButton.dataset.kat = "Kon";
-    VerkehrButton.dataset.kat = "Ver";
-    EnergieButton.dataset.kat = "En";
-    showForscher();
+        ErnährungButton.dataset.kat = "Er";
+        KonsumButton.dataset.kat = "Kon";
+        VerkehrButton.dataset.kat = "Ver";
+        EnergieButton.dataset.kat = "En";
+        showForscher();
 
 
-    intro.innerText = storyText[0].text + eingabeName + storyText[1].text;
-    storyFortschritt += 2;
+        intro.innerText = storyText[0].text + eingabeName + storyText[1].text;
+        storyFortschritt += 2;
 
-    currentIndex = 0;
-
+        currentIndex = 0;
+    }
 
 }
 
