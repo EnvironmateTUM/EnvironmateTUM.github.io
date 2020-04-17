@@ -78,9 +78,9 @@ function drawKlimaGraph() {
 
     koordsystem.font = "12px Roboto";
 
-    for (i = 1; i < 5; i++) {
+    for (i = 0; i < 5; i++) {
         koordsystem.textAlign = "end";
-        koordsystem.fillText(i * 0.25 + 1 + "℃", 38, maxY + 7.5 - i * tempDist)
+        koordsystem.fillText(i * 0.25 + 1 + "℃", 38, maxY + 2.5 - i * tempDist)
     }
     for (i = 0; i < 6; i++) {
         koordsystem.textAlign = "center";

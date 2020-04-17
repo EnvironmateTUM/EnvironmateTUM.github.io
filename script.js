@@ -324,20 +324,23 @@ function videoEnde() {
         if (score > 3) {
 
             levelButtons[levelAkt - 1].classList.add("correct");
-            adjustKlimaGraph(0.25, "green", levelAkt - 1);
             gradErwärmung += 0.25;
+            adjustKlimaGraph(0.25, "green", levelAkt - 1);
+
         }
         else if (score > 1.5) {
 
             levelButtons[levelAkt - 1].classList.add("ok");
-            adjustKlimaGraph(0.5, "orange", levelAkt - 1);
             gradErwärmung += 0.5;
+            adjustKlimaGraph(0.5, "orange", levelAkt - 1);
+
         }
         else {
 
             levelButtons[levelAkt - 1].classList.add("wrong");
-            adjustKlimaGraph(1, "red", levelAkt - 1);
             gradErwärmung += 1;
+            adjustKlimaGraph(1, "red", levelAkt - 1);
+
         }
 
         score = 0;
@@ -869,13 +872,14 @@ export function gameOver() {
     let JahrAkt = 2020 + 6 * levelAkt;
     let alterAkt = JahrAkt - 2020 + parseInt(eingabeAlter);
     storyFortschritt = 100;
+    gradErwärmung = gradErwärmung / 2;
     showForscher();
     if (levelAkt < 5) {
 
 
 
         intro.innerText = eingabeName + ", Du hast es leider nicht geschafft die Erde zu retten. "
-        endText.innerText = "Es ist das Jahr 2050, du bist jetzt " + alterAkt + " Jahre alt. " + "Du hast in " + levelAkt + " Leveln einen Anstieg von " + gradErwärmung + " Grad erspielt und diese Folgen sind bereits zu spüren: ";
+        endText.innerText = "Es ist das Jahr" + JahrAkt + ", du bist jetzt " + alterAkt + " Jahre alt. " + "Du hast in " + levelAkt + " Leveln einen Anstieg von " + gradErwärmung + " Grad erspielt und diese Folgen sind bereits zu spüren: ";
         folge1text.innerText = "Bis zu 3,2 Milliarden Menschen sind von Wasserknappheit betroffen, das sind dann fast ein Drittel der Weltbevölkerung .";
         folge2text.innerText = "Ein Weltweites Artensterben hat eingesetzt, vor allem in Feuchtgebieten, Wäldern und Korallenriffen.";
         folge3text.innerText = "Der Abschmelzprozess Grönlands und der westlichen Antarktis ist unaufhaltbar geworden.";
