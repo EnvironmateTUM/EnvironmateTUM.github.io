@@ -112,7 +112,7 @@ export const energieFragenA5 = [
         items: [
             "./Bilder/Ampel/Energie/Level5/Smartphone.png",
             "./Bilder/Ampel/Energie/Level5/DVD.png",
-            "./Bilder/Ampel/Energie/Level5/Mobilfunkt.png"
+            "./Bilder/Ampel/Energie/Level5/Mobilfunk.png"
         ],
         koords: [
             { bottom: "35%", left: "5%" },
