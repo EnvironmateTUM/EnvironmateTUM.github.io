@@ -938,6 +938,7 @@ function drucken() {
     endScreen.classList.add("hide");
 
     //zertifikat.width = winWidth
+    zertifikatText.style.fontSize = "15px";
     zertifikat.classList.remove("hide");
     zertifikatText.classList.remove("hide");
     zertifikatText.innerText = "Liebe/r " + eingabeName + "\n \n Es ist das Jahr 2050, du bist jetzt " + alterAkt + " Jahre alt. Du hast in " + levelAkt + " Leveln einen Anstieg von " + gradErwärmung + " Grad erspielt \n";
