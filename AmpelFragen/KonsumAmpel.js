@@ -18,7 +18,7 @@ export const konsumFragenA1 = [
             { text: "Ich kaufe praktisches Plastik-Einweggeschirr", correct: "wrong" },
             { text: "Ich kaufe praktisches Papp-Einweggeschirr aus Recyclingfasern.", correct: "ok" }
         ],
-        expl: "Vorhandenes auszuleihen ist immer die beste Option. So sparst du nicht nur Geld, sondern auch Ressourcen und damit CO2 ein. Papierbecher sind meist mit Plastik beschichtet, da sie dir sonst einfach in der Hand zerlaufen würden. Der Becher landet somit im Restmüll, wobei für ein kg Abfall im Schnitt 320g CO2 anfallen. Quelle: Pendo Verlag"
+        expl: "Vorhandenes auszuleihen ist immer die beste Option. So sparst du nicht nur Geld, sondern auch Ressourcen und damit CO2 ein. Papierbecher sind meist mit Plastik beschichtet, da sie dir sonst einfach in der Hand zerlaufen würden. Der Becher landet somit im Restmüll, wobei für ein kg Abfall im Schnitt 320g CO2 anfallen."
     }
 ]
 

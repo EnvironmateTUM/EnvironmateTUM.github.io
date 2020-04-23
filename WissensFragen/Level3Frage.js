@@ -7,7 +7,7 @@ export const WQuestionsL3 = [
             { text: "1-2 Kilogramm CO2", correct: false },
             { text: "15-20  Kilogramm CO2", correct: false }
         ],
-        expl: "Allein durch den Konsum von Kleidung verursacht der Durchschnitts-Deutsche ganze 200kg CO2 im Jahr! Da die meisten Shirts nicht lange getragen werden und unter katastrophalen Arbeitsbedingungen hergestellt werden, fördert unser der Konsum zudem die Ressourcenverschwendung und die Ausbeutung von Arbeitern. Quelle: Focus Online"
+        expl: "Allein durch den Konsum von Kleidung verursacht der Durchschnitts-Deutsche ganze 200kg CO2 im Jahr! Da die meisten Shirts nicht lange getragen werden und unter katastrophalen Arbeitsbedingungen hergestellt werden, fördert unser der Konsum zudem die Ressourcenverschwendung und die Ausbeutung von Arbeitern."
     },
 
     {
@@ -18,7 +18,7 @@ export const WQuestionsL3 = [
             { text: "ca. 10%", correct: false },
             { text: "ca. 40%", correct: true }
         ],
-        expl: "Ganze 40% trägt dein Konsum zu deinem jährlichen CO2-Ausstoß bei und macht damit den größten Anteil aus. Indem du deinen täglichen Konsum umstellst, kannst du somit deinen Ausstoß deutlich verkleinern. Quelle: Umweltbundesamt"
+        expl: "Ganze 40% trägt dein Konsum zu deinem jährlichen CO2-Ausstoß bei und macht damit den größten Anteil aus. Indem du deinen täglichen Konsum umstellst, kannst du somit deinen Ausstoß deutlich verkleinern."
     },
 
     {
@@ -29,7 +29,7 @@ export const WQuestionsL3 = [
             { text: "200 Kilogramm CO2", correct: true },
             { text: "50-60  Kilogramm CO2", correct: false }
         ],
-        expl: "Allein durch den Konsum von Kleidung verursacht der Durchschnitts-Deutsche ganze 200kg CO2 im Jahr! Da die meisten Shirts nicht lange getragen werden und unter katastrophalen Arbeitsbedingungen hergestellt werden, fördert unser der Konsum zudem die Ressourcenverschwendung und die Ausbeutung von Arbeitern. Quelle: Focus Online"
+        expl: "Allein durch den Konsum von Kleidung verursacht der Durchschnitts-Deutsche ganze 200kg CO2 im Jahr! Da die meisten Shirts nicht lange getragen werden und unter katastrophalen Arbeitsbedingungen hergestellt werden, fördert unser der Konsum zudem die Ressourcenverschwendung und die Ausbeutung von Arbeitern."
     },
 
     {
@@ -40,7 +40,7 @@ export const WQuestionsL3 = [
             { text: "Da Plastik leichter ist als andere Verpackungsmaterialien, kann die  Klimabilanz einer Plastikflasche unter Umständen besser sein, als die einer Glasflasche.", correct: true },
             { text: "Durch zu viel Plastikmüll in den Meeren sinkt die Fähigkeit der Ozeane CO2 zu binden und damit aus der Atmosphäre zu entfernen.", correct: false }
         ],
-        expl: "Die Herstellung von Plastik durch Erdöl führt zu einer verheerenden Klimabilanz. Versuche im Alltag Plastik zu vermeiden und Verpackungen zu recyceln. Plastikverpackungen gehören nicht in den Restmüll, sondern in den gelben Sack oder den Plastikcontainer der Wertstoffinsel. Quelle: Greenpeace"
+        expl: "Die Herstellung von Plastik durch Erdöl führt zu einer verheerenden Klimabilanz. Versuche im Alltag Plastik zu vermeiden und Verpackungen zu recyceln. Plastikverpackungen gehören nicht in den Restmüll, sondern in den gelben Sack oder den Plastikcontainer der Wertstoffinsel."
     },
 
     {
@@ -51,7 +51,7 @@ export const WQuestionsL3 = [
             { text: "ca. 18 Kohlekraftwerke", correct: false },
             { text: "ca. 63 Kohlekraftwerke", correct: false }
         ],
-        expl: "Die Herstellung von Plastik durch Erdöl führt zu einer verheerenden Klimabilanz. Versuche im Alltag Plastik zu vermeiden und Verpackungen zu recyceln. Plastikverpackungen gehören nicht in den Restmüll, sondern in den gelben Sack oder den Plastikcontainer der Wertstoffinsel. Quelle: Greenpeace"
+        expl: "Die Herstellung von Plastik durch Erdöl führt zu einer verheerenden Klimabilanz. Versuche im Alltag Plastik zu vermeiden und Verpackungen zu recyceln. Plastikverpackungen gehören nicht in den Restmüll, sondern in den gelben Sack oder den Plastikcontainer der Wertstoffinsel."
     }
 
 
