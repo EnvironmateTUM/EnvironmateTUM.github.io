@@ -879,7 +879,7 @@ export function gameOver() {
 
 
         intro.innerText = eingabeName + ", Du hast es leider nicht geschafft die Erde zu retten. "
-        endText.innerText = "Es ist das Jahr" + JahrAkt + ", du bist jetzt " + alterAkt + " Jahre alt. " + "Du hast in " + levelAkt + " Leveln einen Anstieg von " + gradErwärmung + " Grad erspielt und diese Folgen sind bereits zu spüren: ";
+        endText.innerText = "Es ist das Jahr " + JahrAkt + ", du bist jetzt " + alterAkt + " Jahre alt. " + "Du hast in " + levelAkt + " Leveln einen Anstieg von " + gradErwärmung + " Grad erspielt und diese Folgen sind bereits zu spüren: ";
         folge1text.innerText = "Bis zu 3,2 Milliarden Menschen sind von Wasserknappheit betroffen, das sind dann fast ein Drittel der Weltbevölkerung .";
         folge2text.innerText = "Ein Weltweites Artensterben hat eingesetzt, vor allem in Feuchtgebieten, Wäldern und Korallenriffen.";
         folge3text.innerText = "Der Abschmelzprozess Grönlands und der westlichen Antarktis ist unaufhaltbar geworden.";
@@ -974,6 +974,7 @@ function retry() {
     punkteNeu = 0;
     gradErwärmung = 0;
     gameO = false
+    endText2.innerText = "";
     changeLC(- getCoins());
 
     ampel.src = "./Bilder/pngrot.png";
