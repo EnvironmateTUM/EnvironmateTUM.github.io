@@ -108,7 +108,7 @@ export const VerkehrFragenA5 = [
             { bottom: "35%", left: "65%" },
         ],
         type: "ampel",
-        question: "Das Auto hat die schlechteste Klimabilanz im Nahverkehr. Doch welche der folgenden Alternativen ist die Zweitschlechteste??",
+        question: "Das Auto hat die schlechteste Klimabilanz im Nahverkehr. Doch welche der folgenden Alternativen ist die Zweitschlechteste?",
         answers: [
             { text: "Elektrofahrrad", correct: "wrong" },
             { text: "Elektroauto", correct: "correct" },
