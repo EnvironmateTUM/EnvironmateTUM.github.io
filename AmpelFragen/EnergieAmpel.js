@@ -108,7 +108,7 @@ export const energieFragenA4 = [
 
 export const energieFragenA5 = [
     {
-        hintergrund: "./Bilder/Ampel/Energie/Level4/Hintergrund.png",
+        hintergrund: "./Bilder/Ampel/Energie/Level5/Hintergrund.png",
         items: [
             "./Bilder/Ampel/Energie/Level5/Smartphone.png",
             "./Bilder/Ampel/Energie/Level5/DVD.png",

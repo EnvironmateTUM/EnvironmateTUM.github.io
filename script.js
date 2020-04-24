@@ -444,7 +444,11 @@ function backToKat() {
         }
         else {
             gameO = true;
-            Wfrage();
+            questionContainerElement.classList.add("hide")
+            Container.classList.add("hide")
+            showForscher();
+            storyWeiter();
+            //Wfrage();
             // gameOver();
             console.log("ENDE");
         }
@@ -872,7 +876,7 @@ export function gameOver() {
     let JahrAkt = 2020 + 6 * levelAkt;
     let alterAkt = JahrAkt - 2020 + parseInt(eingabeAlter);
     storyFortschritt = 100;
-    gradErwärmung = gradErwärmung / 2;
+
     showForscher();
     if (levelAkt < 5) {
 
@@ -912,7 +916,7 @@ export function gameOver() {
             intro.innerText = eingabeName + ", Du hast es leider nicht geschafft die Erde zu retten. "
             endText.innerText = "Es ist das Jahr 2050, du bist jetzt " + alterAkt + " Jahre alt. " + "Du hast in " + levelAkt + " Leveln einen Anstieg von " + gradErwärmung + " Grad erspielt und diese Folgen sind bereits zu spüren: \n";
             folge1text.innerText = "Bis zu 3,2 Milliarden Menschen sind von Wasserknappheit betroffen, das sind dann fast ein Drittel der Weltbevölkerung .";
-            folge2text.innerText = "Ein Weltweites Artensterben hat eingesetzt, vor allem in Feuchtgebieten, Wäldern und Korallenriffen.";
+            folge2text.innerText = "Ein weltweites Artensterben hat eingesetzt, vor allem in Feuchtgebieten, Wäldern und Korallenriffen.";
             folge3text.innerText = "Der Abschmelzprozess Grönlands und der westlichen Antarktis ist unaufhaltbar geworden.";
 
             folge1Bild.src = "./Bilder/Folgen/wasserknappheit.png";
@@ -938,16 +942,16 @@ function drucken() {
     endScreen.classList.add("hide");
 
     //zertifikat.width = winWidth
-    zertifikatText.style.fontSize = "15px";
+    zertifikatText.style.fontSize = "16px";
     zertifikat.classList.remove("hide");
     zertifikatText.classList.remove("hide");
-    zertifikatText.innerText = "Liebe/r " + eingabeName + "\n \n Es ist das Jahr 2050, du bist jetzt " + alterAkt + " Jahre alt. Du hast in " + levelAkt + " Leveln einen Anstieg von " + gradErwärmung + " Grad erspielt \n";
+    zertifikatText.innerText = "Liebe/r " + eingabeName + "\n \n Es ist das Jahr 2050, du bist jetzt " + alterAkt + " Jahre alt. Du hast in " + levelAkt + " Leveln einen Anstieg von " + gradErwärmung + " \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 Grad erspielt \n";
 
     if (gradErwärmung < 2) {
-        zertifikatText.innerText += "Damit bist du unter den kritischen 2 Grad geblieben. Doch da die Temperatur seit 1850 bereits um über 1 Grad gestiegen ist, gibt es folgende Auswirkungen auf der Welt: \n Der Nordpol wird im Sommer komplett abschmelzen und nur im Winter mit Eis bedeckt sein. Dadurch sind auch Küstenstädte komplett überschwemmt worden. \n Bis zu 1,7 Milliarden Menschen sind von Wasserknappheit betroffen, das ist mehr als 20 mal die Einwohner Deutschlands. \n 20-30 % aller biologischen Arten (also Pflanzen und Tiere) sind vom Aussterben bedroht."
+        zertifikatText.innerText += "Damit bist du unter den kritischen 2 Grad geblieben. Doch da die Temperatur seit 1850 \u00A0 \u00A0 \u00A0 bereits um über 1 Grad gestiegen ist, gibt es folgende Auswirkungen auf der Welt: \n Der Nordpol wird im Sommer komplett abschmelzen und nur im Winter mit Eis bedeckt \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 sein. Dadurch sind auch Küstenstädte komplett überschwemmt worden. \n Bis zu 1,7 Milliarden Menschen sind von Wasserknappheit betroffen, das ist mehr als 20 \u00A0 \u00A0 \u00A0 \u00A0 mal die Einwohner Deutschlands. \n 20-30 % aller biologischen Arten (also Pflanzen und Tiere) sind vom Aussterben bedroht."
     }
     else {
-        zertifikatText.innerText += "Das ist mehr als das 2-Grad-Ziel. Durch die Erwärmung gibt es folgende Auswirkungen auf der Welt: \n Bis zu 3,2 Milliarden Menschen sind von Wasserknappheit betroffen, das sind dann fast ein Drittel der Weltbevölkerung . \n Ein Weltweites Artensterben hat eingesetzt, vor allem in Feuchtgebieten, Wäldern und Korallenriffen. \n Der Abschmelzprozess Grönlands und der westlichen Antarktis ist unaufhaltbar geworden."
+        zertifikatText.innerText += "Das ist mehr als das 2-Grad-Ziel. Durch die Erwärmung gibt es folgende Auswirkungen auf \u00A0 \u00A0 \u00A0 der Welt: \n Bis zu 3,2 Milliarden Menschen sind von Wasserknappheit betroffen, das sind dann fast \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 ein Drittel der Weltbevölkerung . \n Ein Weltweites Artensterben hat eingesetzt, vor allem in Feuchtgebieten, Wäldern und Korallenriffen. \n Der Abschmelzprozess Grönlands und der westlichen Antarktis ist unaufhaltbar geworden."
     }
 
 
