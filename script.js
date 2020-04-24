@@ -945,13 +945,13 @@ function drucken() {
     zertifikatText.style.fontSize = "16px";
     zertifikat.classList.remove("hide");
     zertifikatText.classList.remove("hide");
-    zertifikatText.innerText = "Liebe/r " + eingabeName + "\n \n Es ist das Jahr 2050, du bist jetzt " + alterAkt + " Jahre alt. Du hast in " + levelAkt + " Leveln einen Anstieg von " + gradErwärmung + " \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 Grad erspielt \n";
+    zertifikatText.innerText = "Liebe/r " + eingabeName + "\n \n Es ist das Jahr 2050, du bist jetzt " + alterAkt + " Jahre alt. Du hast in " + levelAkt + " Leveln einen Anstieg von " + gradErwärmung + " \u00A0 \u00A0 \u00A0 \u00A0 Grad erspielt. \n";
 
     if (gradErwärmung < 2) {
         zertifikatText.innerText += "Damit bist du unter den kritischen 2 Grad geblieben. Doch da die Temperatur seit 1850 \u00A0 \u00A0 \u00A0 bereits um über 1 Grad gestiegen ist, gibt es folgende Auswirkungen auf der Welt: \n Der Nordpol wird im Sommer komplett abschmelzen und nur im Winter mit Eis bedeckt \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 sein. Dadurch sind auch Küstenstädte komplett überschwemmt worden. \n Bis zu 1,7 Milliarden Menschen sind von Wasserknappheit betroffen, das ist mehr als 20 \u00A0 \u00A0 \u00A0 \u00A0 mal die Einwohner Deutschlands. \n 20-30 % aller biologischen Arten (also Pflanzen und Tiere) sind vom Aussterben bedroht."
     }
     else {
-        zertifikatText.innerText += "Das ist mehr als das 2-Grad-Ziel. Durch die Erwärmung gibt es folgende Auswirkungen auf \u00A0 \u00A0 \u00A0 der Welt: \n Bis zu 3,2 Milliarden Menschen sind von Wasserknappheit betroffen, das sind dann fast \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 ein Drittel der Weltbevölkerung . \n Ein Weltweites Artensterben hat eingesetzt, vor allem in Feuchtgebieten, Wäldern und Korallenriffen. \n Der Abschmelzprozess Grönlands und der westlichen Antarktis ist unaufhaltbar geworden."
+        zertifikatText.innerText += "Das ist mehr als das 2-Grad-Ziel. Durch die Erwärmung gibt es folgende Auswirkungen auf \u00A0 \u00A0 \u00A0 der Welt: \n Bis zu 3,2 Milliarden Menschen sind von Wasserknappheit betroffen, das sind dann fast \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 ein Drittel der Weltbevölkerung. \n Ein weltweites Artensterben hat eingesetzt, vor allem in Feuchtgebieten, Wäldern und Korallenriffen. \n Der Abschmelzprozess Grönlands und der westlichen Antarktis ist unaufhaltbar geworden."
     }
 
 
