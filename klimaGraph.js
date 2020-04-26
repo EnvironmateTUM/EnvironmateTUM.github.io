@@ -1,11 +1,8 @@
 import { gameOver } from "./script.js"
-/*const levelC = document.getElementById("level-container")
-const item2 = document.getElementById("level-grid")
-*/
+
 const graph = document.getElementById("graph");
-graph.style.border = "1px solid #000000"
-console.log(graph.style.width)
-klimaGraphResize()
+graph.style.border = "1px solid #000000";
+klimaGraphResize();
 let sfactor = Math.round(window.document.body.clientWidth * 0.78) / graph.style.width;
 
 graph.style.width *= sfactor
@@ -34,7 +31,6 @@ let koordWerte = [{ a: "m", x: 40, y: 30 }, { a: "l", x: 40, y: maxY }, { a: "l"
 let koordsystem = graph.getContext("2d");
 
 koordsystem.strokeStyle = "black";
-console.log("koordsystem")
 let i = 0
 
 drawKlimaGraph();
@@ -129,15 +125,6 @@ function klimaGraphResize() {
     let sizingfaktorH
     sizingfaktorW = 1067 / (window.document.body.clientWidth * 0.78);
     sizingfaktorH = 673 / (window.document.body.clientHeight * 0.8);
-    // 673 / (window.document.body.clientHeight * 0.8);
-    /*
-    if ((673 / (window.document.body.clientHeight * 0.8)) < sizingfaktor) {
-        sizingfaktor = 673 / (window.document.body.clientHeight * 0.8);
-    }
-    */
-    // 673 height
-    //console.log(sizingfaktor)
-    // sizingfaktor = sizingfaktor * 1.05
     graph.width = 1067 / (sizingfaktorW * 1.03);
     graph.height = 673 / (sizingfaktorH * 1.03);
 
@@ -145,8 +132,3 @@ function klimaGraphResize() {
 }
 
 
-/*
-levelC.insertBefore(graph, item2)
-let zwischen = levelC.firstChild
-levelC
-*/

@@ -153,13 +153,12 @@ document.body.style.backgroundSize = "100% 100%";
 
 
 function startGame() {
-    // window.print();
     document.body.background = "./Bilder/pngZeichenfläche 1.png";
     document.body.style.backgroundSize = "100% 100%";
     eingabeName = nameEingabe.value;
     eingabeAlter = alterEingabe.value;
     eingabeAlter = Number(eingabeAlter);
-    console.log(eingabeAlter)
+
     if (eingabeName == "" || Number.isNaN(eingabeAlter) || eingabeAlter == 0) {
         window.alert("Bitte gebe deinen Namen und dein Alter an.")
     }
@@ -231,9 +230,6 @@ function storyWeiter() {
             else {
                 klimaVideo.classList.remove("hide");
                 klimaVideo.play();
-                //setNextQuestion();
-                //Container.classList.remove("hide");
-                //questionContainerElement.classList.remove("hide");
             }
         }
     }
@@ -348,7 +344,7 @@ function videoEnde() {
         if (gameO) {
             gameOver();
         }
-        //levelAkt += 1;
+
 
     }
 
@@ -390,7 +386,6 @@ function setFragen(e) {
     anzKatDone += 1;
     chartConatiner.classList.add("hide");
     Container.classList.remove("hide");
-    //infoButton.classList.remove("hide");
 
     questionContainerElement.classList.remove("hide");
     setNextQuestion();
@@ -448,15 +443,10 @@ function backToKat() {
             Container.classList.add("hide")
             showForscher();
             storyWeiter();
-            //Wfrage();
-            // gameOver();
-            console.log("ENDE");
+
         }
 
 
-
-
-        // level.classList.remove("hide");
 
 
 
@@ -491,7 +481,6 @@ function Wfrage() {
     restartButton.classList.add("hide");
     shuffledQuestions = WFragen[levelAkt - 1].sort(() => Math.random() - 0.5);
     Container.classList.remove("hide");
-    // infoButton.classList.remove("hide");
 
     answerButtonsElement.classList.remove("hide");
     questionContainerElement.classList.add("hide");
@@ -544,36 +533,6 @@ function levelUebersicht() {
     chartConatiner.classList.remove("hide");
 
 
-    /*
-    
-    var chart = new CanvasJS.Chart("chartContainer", {
-        animationEnabled: true,
-        title: {
-            text: "Desktop Search Engine Market Share - 2016"
-        },
-        data: [{
-            type: "pie",
-            startAngle: 240,
-            yValueFormatString: "##0.00\"%\"",
-            indexLabel: "{label} {y}",
-            dataPoints: [
-                { y: 79.45, label: "Verkehr" },
-                { y: 7.31, label: "Konsum" },
-                { y: 7.06, label: "Energie" },
-                { y: 4.91, label: "Ernährung" }
-            ]
-        }]
-    });
-    chart.render();
-    let labels = chart.get("data");
-    labels[0].addEventListener("click", paull);
-    let i;
-    for (i = 0; i < labels.length; i++) {
-        console.log(labels[i]);
-    }
-    //const label1 = document.getElementById("Verkehr")
-*/
-
 }
 
 
@@ -591,7 +550,6 @@ function setNextQuestion() {
     }
     else if (currentIndex >= shuffledQuestions.length) {
         questionElement.innerText = "Hopla, da sind uns wohl die Fragen ausgegangen.";
-        console.log("Hopla, da sind uns wohl die Fragen ausgegangen.");
         restartButton.classList.remove("hide");
     }
     else {
@@ -601,13 +559,11 @@ function setNextQuestion() {
 }
 
 function showQuestion(question) {
-    //    infoButton.innerText = "Tipp";
     itBox.innerText = question.tipp;
     currentExpl = question.expl;
     Container.classList.remove("containerQ");
     if (question.type == "singleChoice") {
         Container.classList.remove("containerBlank")
-        console.log(Container.classList)
         Container.classList.add("containerW");
         Container.classList.remove("container");
         restartButton.innerText = "Weiter zu den Kategorien."
@@ -651,15 +607,8 @@ function showQuestion(question) {
             bild1.dataset.correct = answer.correct;
             bild1.addEventListener("click", selectAnswerAmpel);
             bild1.style.position = "absolute";
-            /*
-                        let h = new Image();
-                        h.src = question.items[i];
-                        console.log(h.width)
-                        let sizingfactor = 100 / h.height;
-                        console.log(sizingfactor)
-                        */
+
             bild1.height = 275;
-            //   bild1.width = bild1.width * sizingfactor;
 
             bild1.style.left = question.koords[i].left;
             bild1.style.bottom = question.koords[i].bottom;
@@ -668,14 +617,7 @@ function showQuestion(question) {
 
 
             i += 1;
-            /*
-            const button = document.createElement("button");
-            button.innerText = answer.text;
-            button.classList.add("btn");
-            button.dataset.correct = answer.correct;
-            button.addEventListener("click", selectAnswerAmpel);
-            answerButtonsElement.appendChild(button);
-            */
+
 
             questionContainerElement.appendChild(bild1);
         })
@@ -717,7 +659,6 @@ function selectAnswerAmpel(e) {
     updateAmpel();
     document.body.classList.add(correct);
     Array.from(questionContainerElement.children).forEach(input => {
-        //input.classList.add(button.dataset.correct);
         input.removeEventListener("click", selectAnswerAmpel);
 
     })
@@ -735,7 +676,6 @@ function updateAmpel() {
     else {
         scoreRelativ = score / anzKatDone;
     }
-    console.log(scoreRelativ)
     if (scoreRelativ >= 0.875) {
         ampel.src = "./Bilder/pnggrün.png";
         ampel.style.height = "100%";
@@ -897,7 +837,7 @@ export function gameOver() {
         levelButtons[levelAkt].classList.remove("btn");
     }
     else {
-        console.log(gradErwärmung);
+
         level.classList.remove("hide")
         if (gradErwärmung < 2) {
             intro.innerText = "Mit deiner Hilfe ist es uns gelungen die Klimaerwärmung in Grenzen zu halten, " + eingabeName + "."
@@ -941,7 +881,7 @@ function drucken() {
     hideForscher();
     endScreen.classList.add("hide");
 
-    //zertifikat.width = winWidth
+
     zertifikatText.style.fontSize = "16px";
     zertifikat.classList.remove("hide");
     zertifikatText.classList.remove("hide");

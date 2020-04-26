@@ -66,7 +66,7 @@ export const VerkehrFragenA3 = [
             { text: "Lieber zwei mal fahren, dafür mit weniger Ladung im Kofferraum", correct: "wrong" },
             { text: "Kofferraum leerräumen", correct: "ok" },
         ],
-        expl: "Sowohl Grün als auch Gelb sollte befolgt werden, denn das verbraucht unnötige Zusatzenergie. Der Dachträger verursacht viel Windwiderstand, und verbraucht so 1 Liter Kraftstoff mehr pro 100 km. Gepäck also lieber in den Kofferraum. Doch auch hier braucht Zusatzgewicht mehr Sprit."
+        expl: "Sowohl den Dachträger abzumontieren als auch unnötiges Gepäck auszuladen ist zu empfehlen, denn das verbraucht unnötige Zusatzenergie. Der Dachträger verursacht viel Windwiderstand, und verbraucht so 1 Liter Kraftstoff mehr pro 100 km. Gepäck also lieber in den Kofferraum. Doch auch hier braucht Zusatzgewicht mehr Sprit."
     }
 ]
 
